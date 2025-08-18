@@ -39,7 +39,20 @@ public class SellerMyPageFrontController extends HttpServlet {
 	}
 
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
 		
+		String target = request.getRequestURI().substring(request.getContextPath().length());
+		System.out.println("sellerMyPageFrontController 진입 성공");
+		System.out.println("현재 경로 : "+target);
+		Result result = new Result();
+		
+		switch(target) {
+		case "/sellerPage/foodSaleWrite.se":
+			System.out.println("음식 판매 등록 요청");
+			break;
+		case "/sellerPage/
+		}
 	}
 
 }
