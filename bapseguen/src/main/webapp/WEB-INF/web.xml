@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>bapseguen</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Admin -->
+  <servlet>
+  	<servlet-name>Admin</servlet-name>
+  	<servlet-class>com.bapseguen.app.admin.AdminFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Admin</servlet-name>
+  	<url-pattern>*.ad</url-pattern>
+  </servlet-mapping>
+
+	<!-- Buy -->
+  <servlet>
+  	<servlet-name>Buy</servlet-name>
+  	<servlet-class>com.bapseguen.app.buy.BuyFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Buy</servlet-name>
+  	<url-pattern>*.bu</url-pattern>
+  </servlet-mapping>
+
+	<!-- CartList -->
+  <servlet>
+  	<servlet-name>CartList</servlet-name>
+  	<servlet-class>com.bapseguen.app.cartList.CartListFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CartList</servlet-name>
+  	<url-pattern>*.cl</url-pattern>
+  </servlet-mapping>
+
+	<!-- Community -->
+  <servlet>
+  	<servlet-name>Community</servlet-name>
+  	<servlet-class>com.bapseguen.app.community.CommunityFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Community</servlet-name>
+  	<url-pattern>*.co</url-pattern>
+  </servlet-mapping>
+
+	<!-- FindId -->
+  <servlet>
+  	<servlet-name>FindId</servlet-name>
+  	<servlet-class>com.bapseguen.app.findId.FindIdFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FindId</servlet-name>
+  	<url-pattern>*.fi</url-pattern>
+  </servlet-mapping>
+
+	<!-- FindPW -->
+  <servlet>
+  	<servlet-name>FindPW</servlet-name>
+  	<servlet-class>com.bapseguen.app.findPW.FindPWFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FindPW</servlet-name>
+  	<url-pattern>*.fp</url-pattern>
+  </servlet-mapping>
+
+	<!-- Join -->
+  <servlet>
+  	<servlet-name>Join</servlet-name>
+  	<servlet-class>com.bapseguen.app.join.JoinFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Join</servlet-name>
+  	<url-pattern>*.jo</url-pattern>
+  </servlet-mapping>
+
+	<!-- Login -->
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.bapseguen.app.login.LoginFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>*.lo</url-pattern>
+  </servlet-mapping>
+
+	<!-- SellerMyPage -->
+  <servlet>
+  	<servlet-name>SellerMyPage</servlet-name>
+  	<servlet-class>com.bapseguen.app.sellerMyPage.SellerMyPageFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SellerMyPage</servlet-name>
+  	<url-pattern>*.se</url-pattern>
+  </servlet-mapping>
+
+	<!-- UserMyPage -->
+  <servlet>
+  	<servlet-name>UserMyPage</servlet-name>
+  	<servlet-class>com.bapseguen.app.userMyPage.UserMyPageFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserMyPage</servlet-name>
+  	<url-pattern>*.my</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

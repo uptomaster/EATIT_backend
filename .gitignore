@@ -1,0 +1,102 @@
+# -----------------------------
+# OS
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# IDE & Editors
+# -----------------------------
+# IntelliJ
+.idea
+.iml
+.iws
+out
+
+# VSCode
+.vscode
+
+# Eclipse  STS
+.classpath
+.project
+.settings
+.metadata
+
+# NetBeans
+nbprojectprivate
+build
+nbbuild
+nbdist
+nbactions.xml
+nb-configuration.xml
+.nb-gradle
+
+# -----------------------------
+# Build & Artifacts
+# -----------------------------
+# Java
+.class
+
+# Packages
+.jar
+.war
+.ear
+
+# Maven
+target
+log
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle
+build
+# keep Gradle wrapper in VCS
+!gradlewrappergradle-wrapper.jar
+
+# -----------------------------
+# Servers & Runtime
+# -----------------------------
+Servers
+logs
+.log
+catalina.out
+hs_err_pid
+replay_pid
+tmp
+temp
+work
+
+# Uploaded files (runtime storage)
+uploads
+
+# -----------------------------
+# WebApp-specific
+# -----------------------------
+# If you manage deps via MavenGradle, don't commit WEB-INFlib (optional)
+# WEB-INFlib
+
+# -----------------------------
+# Frontend (optional)
+# -----------------------------
+# node_modules
+
+# -----------------------------
+# Secrets & Local Config
+# -----------------------------
+.env
+.env.
+configsecrets.properties
+config.secrets.properties
+.secrets.yml
+
+# Local-only Spring config (if used)
+srcmainresourcesapplication-local.yml
+srcmainresourcesapplication-local.properties
+# Example configs should be committed
+!srcmainresourcesapplication-example.yml
+!srcmainresourcesapplication-example.properties
