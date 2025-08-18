@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class joinFrontController
  */
 @WebServlet("/joinFrontController")
-public class joinFrontController extends HttpServlet {
+public class JoinFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public joinFrontController() {
+    public JoinFrontController() {
         super();
         // TODO Auto-generated constructor stub
     }

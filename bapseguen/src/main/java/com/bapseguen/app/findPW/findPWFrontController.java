@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class findPWFrontController
  */
 @WebServlet("/findPWFrontController")
-public class findPWFrontController extends HttpServlet {
+public class FindPWFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public findPWFrontController() {
+    public FindPWFrontController() {
         super();
         // TODO Auto-generated constructor stub
     }

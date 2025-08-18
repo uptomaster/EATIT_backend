@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class buyFrontController
  */
 @WebServlet("/buyFrontController")
-public class buyFrontController extends HttpServlet {
+public class BuyFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public buyFrontController() {
+    public BuyFrontController() {
         super();
         // TODO Auto-generated constructor stub
     }

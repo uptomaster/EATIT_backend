@@ -34,6 +34,24 @@
   justify-content: center;
   margin-top: 10px;
 }
+/* 최신순 거리순 정렬 */
+.buy_array{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.buy_array li{
+  display: inline-block;
+  list-style: none;
+}
+.buy_array li a:hover{
+  color:#ff924e;
+}
+.buy_array li a{
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+}
 
 #buy_search {
   width: 800px;
@@ -58,14 +76,13 @@
   /* border: 1px solid orange; */
   margin-top: 30px;
   text-align: center;
-  overflow-y: auto; /* 스크롤 가능하게 */
   padding-bottom: 20px;
 }
 
 /* 개별 음식점 카드 */
 .buy_food_article {
   width: 245px;
-  height: 400px;
+  height: 360px;
   /* border: 1px solid blue; */
   margin: 0 15px 20px 0;
   background-color: white;
@@ -118,18 +135,18 @@
 .buy_store_name {
   font-size: 12px;
   font-weight: bold;
-  color: #444;
+  color: #444444;
 }
 
 .buy_menu_name {
   font-size: 14px;
-  color: #222;
+  color: #222222;
 }
 
 .buy_open_time {
   font-size: 12px;
   display: inline-block;
-  color: #666;
+  color: #666666;
 }
 
 .buy_price {
@@ -143,7 +160,7 @@
 .buy_pagenation {
   width: 290px;
   height: 32px;
-  margin: 30px auto;
+  margin: 80px auto;
 }
 
 .buy_pagenation ul {
