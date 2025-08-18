@@ -1,17 +1,19 @@
-<!-------------------- 헤더 ------------------------>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!-------------------- 헤더 ------------------------>
 <header id="header">
   <nav id="header_login">
-    <!-- 로그인 전 네비게이션-로그인/회원가입 -->
+    <!-- 로그인 후 네비게이션-로그아웃/마이페이지 -->
     <ul>
-      <li><a href="./../../app/login/login.html">로그인</a></li>
-      <li><a href="./../../app/join/selectUserType.html">회원가입</a></li>
+      <li><a href="/main.html">로그아웃</a></li>
+      <li><a href="./../../app/userMyPage/editUserInfo.html">마이페이지</a></li>
     </ul>
   </nav>
   <!-- 헤더 중앙정렬 영역 -->
   <div id="header_wrapper">
     <!-- 메인 로고 이미지-->
     <div id="header_logo">
-      <a href="./main.html"><img src="./../webapp/assets/img/header_logo.png" alt="밥세권 로고"></a>
+      <a href="/main.html"><img src="./../webapp/assets/img/header_logo.png" alt="밥세권 로고"></a>
     </div>
     <!-- 메인 네비게이션 -->
     <nav id="header_nav">
