@@ -1,4 +1,4 @@
-package com.bapseguen.app.buy;
+package com.bapseguen.app.order;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
