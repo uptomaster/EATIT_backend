@@ -1,4 +1,6 @@
-<footer id="footer">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <footer id="footer">
   <!-- 푸터 중앙정렬 영역 -->
   <div id="footer_wrapper">
     <!-- 푸터 고객센터 영역 -->
