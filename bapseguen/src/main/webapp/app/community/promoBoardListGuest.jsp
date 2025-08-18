@@ -1,22 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>홍보게시판(회원)</title>
-  <link rel="stylesheet" href="./../../assets/css/community/promoBoardList.css" />
+  <title>홍보게시판(비회원)</title>
+  <link rel="stylesheet" href="./../../assets/css/community/promoBoardListGuest.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
-  <script defer src="./../../assets/js/community/promoBoardList.js"></script>
-  <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
   <link rel="stylesheet" href="./../../assets/css/community/treeGrade.css">
+  <script defer src="./../../assets/js/community/promoBoardListGuest.js"></script>
+  <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
+  <script defer src="./../../assets/js/community/gotoLogin.js"></script>
   <script defer src="./../../assets/js/community/mouseoverTreeIcon.js"></script>
-  <script defer src="./../../assets/js/community/writePromoBoard.js"></script>
   <script>
-    let headerPath = '../../header_login.html';
+    let headerPath = '../../header.html';
     let footerPath = '../../footer.html';
   </script>
   <script defer src="../../assets/js/header.js"></script>
@@ -32,10 +36,11 @@
       <!-- 카테고리 -->
       <nav class="community_category">
         <ul>
-          <li><a href="./../../app/community/communityMainUser.html" id="category_event">공지사항/이벤트</a></li>
-          <li><a href="./../../app/community/freeBoardList.html" id="category_free">자유게시판</a></li>
-          <li><a href="./../../app/community/promoBoardList.html" id="category_advertise" class="active">홍보게시판</a></li>
-          <li><a href="./../../app/community/recipeList.html" id="category_recipe">레시피</a></li>
+          <li><a href="./../../app/community/communityMainGuest.html" id="category_event">공지사항/이벤트</a></li>
+          <li><a href="./../../app/community/freeBoardListGuest.html" id="category_free">자유게시판</a></li>
+          <li><a href="./../../app/community/promoBoardListGuest.html" id="category_advertise" class="active">홍보게시판</a>
+          </li>
+          <li><a href="./../../app/community/recipeListGuest.html" id="category_recipe">레시피</a></li>
         </ul>
       </nav>
 
@@ -129,7 +134,6 @@
             <div class="col_likes" role="cell">45</div>
           </div>
         </div>
-
       </section>
 
       <!-- 페이지네이션 -->
@@ -137,7 +141,7 @@
         <!-- 페이지 버튼 생성됨 -->
       </div>
 
-      <!-- 검색 & 글쓰기 -->
+      <!-- 검색 -->
       <div class="controls_wrapper">
         <div class="function_container">
           <div class="search_box">
@@ -145,10 +149,6 @@
             <button class="search_btn" type="button">
               <i class="fas fa-search"></i>
             </button>
-          </div>
-
-          <div class="write_form">
-            <a href="./../community/writePromoBoard.html" id="writeBtn">글쓰기</a>
           </div>
         </div>
       </div>

@@ -1,18 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>홍보게시판(비회원)</title>
-  <link rel="stylesheet" href="./../../assets/css/community/promoBoardListGuest.css" />
+  <title>레시피게시판(비회원)</title>
+  <link rel="stylesheet" href="./../../assets/css/community/recipeListGuest.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
   <link rel="stylesheet" href="./../../assets/css/community/treeGrade.css">
-  <script defer src="./../../assets/js/community/promoBoardListGuest.js"></script>
+  <script defer src="./../../assets/js/community/recipeListGuest.js"></script>
   <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
   <script defer src="./../../assets/js/community/gotoLogin.js"></script>
   <script defer src="./../../assets/js/community/mouseoverTreeIcon.js"></script>
@@ -35,9 +38,8 @@
         <ul>
           <li><a href="./../../app/community/communityMainGuest.html" id="category_event">공지사항/이벤트</a></li>
           <li><a href="./../../app/community/freeBoardListGuest.html" id="category_free">자유게시판</a></li>
-          <li><a href="./../../app/community/promoBoardListGuest.html" id="category_advertise" class="active">홍보게시판</a>
-          </li>
-          <li><a href="./../../app/community/recipeListGuest.html" id="category_recipe">레시피</a></li>
+          <li><a href="./../../app/community/promoBoardListGuest.html" id="category_advertise">홍보게시판</a></li>
+          <li><a href="./../../app/community/recipeListGuest.html" id="category_recipe" class="active">레시피</a></li>
         </ul>
       </nav>
 
@@ -54,81 +56,66 @@
 
         <div id="postListBody" class="list_body" role="rowgroup">
           <div class="list_row flex_row" role="row">
-            <div class="col_tag" role="cell">신규매장</div>
-            <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">홍대에 새로 오픈한 이탈리안 레스토랑 소개</a>
-            </div>
+            <div class="col_tag" role="cell">한식</div>
+            <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">김치찌개 황금레시피 공개</a></div>
             <div class="col_author" role="cell">
-              messi
+              SonHeungmin
               <img src="./../../assets/img/나무.png" alt="나무" class="tree_icon author_profile" />
             </div>
-            <div class="col_date" role="cell">25-08-01</div>
-            <div class="col_views" role="cell">350</div>
-            <div class="col_likes" role="cell">80</div>
-          </div>
-
-          <div class="list_row flex_row" role="row">
-            <div class="col_tag" role="cell">프로모션</div>
-            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">카페 여름 시즌 한정 음료 할인
-                행사</a></div>
-            <div class="col_author" role="cell">
-              ronaldo
-              <img src="./../../assets/img/가지.png" alt="가지" class="tree_icon author_profile" />
-            </div>
-            <div class="col_date" role="cell">25-07-25</div>
-            <div class="col_views" role="cell">280</div>
+            <div class="col_date" role="cell">25-03-10</div>
+            <div class="col_views" role="cell">230</div>
             <div class="col_likes" role="cell">55</div>
           </div>
 
           <div class="list_row flex_row" role="row">
-            <div class="col_tag" role="cell">제품소개</div>
-            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">신선한 유기농 채소 식자재 공급
-                시작</a></div>
+            <div class="col_tag" role="cell">양식</div>
+            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">크림 파스타 완벽 가이드</a>
+            </div>
             <div class="col_author" role="cell">
-              neymar
+              LionelMessi
+              <img src="./../../assets/img/가지.png" alt="가지" class="tree_icon author_profile" />
+            </div>
+            <div class="col_date" role="cell">25-05-20</div>
+            <div class="col_views" role="cell">180</div>
+            <div class="col_likes" role="cell">48</div>
+          </div>
+
+          <div class="list_row flex_row" role="row">
+            <div class="col_tag" role="cell">중식</div>
+            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">짜장면 집에서 쉽게 만들기</a>
+            </div>
+            <div class="col_author" role="cell">
+              CristianoRonaldo
               <img src="./../../assets/img/잎새.png" alt="잎새" class="tree_icon author_profile" />
             </div>
-            <div class="col_date" role="cell">25-08-05</div>
-            <div class="col_views" role="cell">220</div>
-            <div class="col_likes" role="cell">40</div>
+            <div class="col_date" role="cell">25-06-01</div>
+            <div class="col_views" role="cell">120</div>
+            <div class="col_likes" role="cell">22</div>
           </div>
 
           <div class="list_row flex_row" role="row">
-            <div class="col_tag" role="cell">행사안내</div>
-            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">베이커리 체험단 모집 공고</a>
+            <div class="col_tag" role="cell">일식</div>
+            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">초밥 만들기 초보 가이드</a>
             </div>
             <div class="col_author" role="cell">
-              mbappe
+              NeymarJr
               <img src="./../../assets/img/새싹.png" alt="새싹" class="tree_icon author_profile" />
             </div>
-            <div class="col_date" role="cell">25-07-20</div>
-            <div class="col_views" role="cell">180</div>
-            <div class="col_likes" role="cell">50</div>
+            <div class="col_date" role="cell">25-07-15</div>
+            <div class="col_views" role="cell">95</div>
+            <div class="col_likes" role="cell">30</div>
           </div>
 
           <div class="list_row flex_row" role="row">
-            <div class="col_tag" role="cell">서비스</div>
-            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">예약 시스템 신규 도입 안내</a>
-            </div>
+            <div class="col_tag" role="cell">디저트</div>
+            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">초코 케이크 레시피</a></div>
             <div class="col_author" role="cell">
-              salah
+              KylianMbappe
               <img src="./../../assets/img/씨앗.png" alt="씨앗" class="tree_icon author_profile" />
             </div>
-            <div class="col_date" role="cell">25-07-15</div>
-            <div class="col_views" role="cell">150</div>
-            <div class="col_likes" role="cell">35</div>
-          </div>
-
-          <div class="list_row flex_row" role="row">
-            <div class="col_tag" role="cell">할인정보</div>
-            <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">점심시간 스페셜 메뉴 할인 이벤트</a>
-            </div>
-            <div class="col_author" role="cell">
-              kane
-              <img src="./../../assets/img/나무.png" alt="나무" class="tree_icon author_profile" />
-            </div>
-            <div class="col_date" role="cell">25-07-10</div>
-            <div class="col_views" role="cell">170</div>
-            <div class="col_likes" role="cell">45</div>
+            <div class="col_date" role="cell">25-07-25</div>
+            <div class="col_views" role="cell">140</div>
+            <div class="col_likes" role="cell">40</div>
           </div>
         </div>
       </section>
