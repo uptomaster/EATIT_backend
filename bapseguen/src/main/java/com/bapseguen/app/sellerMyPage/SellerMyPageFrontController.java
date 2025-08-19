@@ -7,10 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.bapseguen.app.Result;
+
 /**
  * Servlet implementation class sellerMyPageFrontController
  */
-@WebServlet("/sellerMyPageFrontController")
+//@WebServlet("/sellerMyPageFrontController")
 public class SellerMyPageFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -51,7 +53,7 @@ public class SellerMyPageFrontController extends HttpServlet {
 		case "/sellerPage/foodSaleWrite.se":
 			System.out.println("음식 판매 등록 요청");
 			break;
-		case "/sellerPage/
+		case "/sellerPage/":
 		}
 	}
 
