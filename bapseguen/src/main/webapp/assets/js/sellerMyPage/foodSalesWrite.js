@@ -36,7 +36,7 @@ function checkImageSize(file) {
 
     reader.readAsDataURL(file);
   });
-}
+};
 
 // 파일 선택 시 처리
 document.getElementById('food_edit_photo').addEventListener('change', async function (e) {
