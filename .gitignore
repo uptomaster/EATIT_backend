@@ -100,3 +100,4 @@ srcmainresourcesapplication-local.properties
 # Example configs should be committed
 !srcmainresourcesapplication-example.yml
 !srcmainresourcesapplication-example.properties
+/bin/

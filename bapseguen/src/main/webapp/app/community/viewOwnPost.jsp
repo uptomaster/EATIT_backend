@@ -1,18 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>타인 게시글 보기</title>
-  <link rel="stylesheet" href="./../../assets/css/community/viewOtherPost.css" />
+  <title>자신 게시글 보기</title>
+  <link rel="stylesheet" href="./../../assets/css/community/viewOwnPost.css" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
-  <link rel="stylesheet" href="./../../assets/css/community/treeGrade.css" />
+  <link rel="stylesheet" href="./modal.css" />
   <script defer src="./../../assets/js/community/reportPostModal.js"></script>
-  <script defer src="./../../assets/js/community/viewOtherPost.js"></script>
+  <script defer src="./../../assets/js/community/viewOwnPost.js"></script>
   <script defer src="./../../assets/js/community/darkmode.js"></script>
   <script defer src="./../../assets/js/community/treeGradeModal.js"></script>
+  <script defer src="./../../assets/js/community/EditDeletePost.js"></script>
   <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
   <script>
     let headerPath = '../../header_login.html';
@@ -55,10 +59,19 @@
           </div>
         </div>
 
-        <!-- 게시글 본문 -->
-        <div class="post_content">
-          ㅋㅋㅋ 내가 1빠임ㅋ
-        </div>
+
+        <!-- 게시글 내용 -->
+        <section class="content_section">
+          <div class="post_content">
+            ㅋㅋㅋ 내가 1빠임ㅋ
+          </div>
+          <div class="post_buttons">
+            <div class="func_button">
+              <button class="edit">수정</button>
+              <button class="delete">삭제</button>
+            </div>
+          </div>
+        </section>
 
         <!-- 게시글 버튼 -->
         <div class="post_buttons">
@@ -66,7 +79,6 @@
             <img src="./../../assets/img/like.jpg" alt="추천 버튼" />
           </button>
           <span class="recommend_count" id="recommendCount">추천 0</span>
-          <button type="button" class="report" id="openReportModal" title="신고하기">신고</button>
         </div>
       </article>
 
@@ -74,7 +86,7 @@
       <section class="comment_section">
         <h2 class="comment_count">
           <img src="./../../assets/img/comment_box.svg" alt="댓글 아이콘" />
-          댓글
+          댓글(1)
         </h2>
 
         <ul class="comment_list">
@@ -96,7 +108,7 @@
           </li>
         </ul>
 
-        <!-- 다크모드 -->
+        <!-- 댓글 작성 폼 -->
         <form class="comment_form" action="#" method="post">
           <img class="comment_profile" src="./../../assets/img/나무.png" alt="나무" />
           <span class="comment_author">namhyuk</span>
@@ -141,7 +153,38 @@
 
 
   <!-- 푸터 -->
-  <footer id="footer"></footer>
+  <footer id="footer">
+    <!-- 푸터 중앙정렬 영역 -->
+    <div id="footer_wrapper">
+      <!-- 푸터 고객센터 영역 -->
+      <div class="footerbox_left">
+        <p class="footer_customer_center">고객행복센터</p>
+        <span>1588-5890<p>월~금 오전 9시 - 오후 6시</p></span>
+        <p class="footer_email">비회원 문의 : abcdefg@koreait.com</p>
+        <div class="footer_sns">
+          <ul>
+            <li><a href="#"><img src="./../../assets/img/sns_insta.png" alt=""></a></li>
+            <li><a href="#"><img src="./../../assets/img/sns_facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./../../assets/img/sns_twitter.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 푸터 사업자정보 영역 -->
+      <div class="footerbox_right">
+        <ul>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">인재채용</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">이용안내</a></li>
+        </ul>
+        <p>법인명 : 주식회사 밥세권 | 사업자등록번호 : 123-12-123456</p>
+        <p>주소 : 서울 강남구 테헤란로 146 | 대표이사 : 이정훈</p>
+        <p>팩스 : 070-123-1234</p>
+        <p> &copy; 2025 web dev team project.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

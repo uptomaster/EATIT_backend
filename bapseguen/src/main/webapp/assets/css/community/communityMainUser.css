@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 전체 레이아웃 */
 main {
   display: flex;
